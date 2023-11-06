@@ -9,15 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var firstNumber = 2
+    @State var firstNumber = 9
     @State var secondNumber = 3
     
     
     var body: some View {
         VStack {
-            Text("2")
+            Text("\(firstNumber)")
             Text("+")
-            Text("3")
+            Text("\(secondNumber)")
             Divider()
         }
         .padding()
