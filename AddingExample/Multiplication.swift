@@ -16,17 +16,37 @@ struct Multiplication: View {
     }
 
     var body: some View {
-        Text("\(firstNumber)")
+        HStack {
+            Spacer()
+            Text("\(firstNumber)")
+                .font(Font .system(size: 50))
+                .padding(.trailing)
+        }
         Stepper(value: $firstNumber, label: {
             Text("select first number")
         })
-        Text("×")
-        Text("\(secondNumber)")
+        .padding()
+        HStack {
+            Text("×")
+                .font(Font .system(size: 50))
+                .padding(.leading)
+            Spacer()
+            Text("\(secondNumber)")
+                .font(Font .system(size: 50))
+                .padding(.trailing)
+        }
+        
         Stepper(value: $secondNumber, label: {
             Text("select second number")
         })
+        .padding()
         Divider()
-        Text("\(result)")
+        HStack {
+            Spacer()
+            Text("\(result)")
+                .font(Font .system(size: 50))
+            .padding(.trailing)
+        }
     }
 }
 
