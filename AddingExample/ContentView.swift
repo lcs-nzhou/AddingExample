@@ -80,8 +80,8 @@ struct ContentView: View {
             }
         Text("Timer")
             .tabItem {
-                Image(systemName: "timer")
-                Text("Timer")
+                Image(systemName: "divide")
+                Text("Divide")
             }
     }
     // Change the accent olor for the currently active tab item
