@@ -16,8 +16,14 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("\(firstNumber)")
+            Stepper(value: $firstNumber, label: {
+                Text("select first number")
+            })
             Text("+")
             Text("\(secondNumber)")
+            Stepper(value: $secondNumber, label: {
+                Text("select second number")
+            })
             Divider()
         }
         .padding()
