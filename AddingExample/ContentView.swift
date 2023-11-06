@@ -24,17 +24,38 @@ struct ContentView: View {
     // User interface
     var body: some View {
         VStack {
-            Text("\(firstNumber)")
+            HStack {
+                Spacer()
+                Text("\(firstNumber)")
+                    .font(Font .system(size: 50))
+                    .padding(.trailing)
+            }
+            
             Stepper(value: $firstNumber, label: {
                 Text("select first number")
             })
-            Text("+")
-            Text("\(secondNumber)")
+            
+            HStack {
+                Text("+")
+                    .font(Font .system(size: 50))
+                Spacer()
+                Text("\(secondNumber)")
+                    .font(Font .system(size: 50))
+                    .padding(.trailing)
+            }
+            
             Stepper(value: $secondNumber, label: {
                 Text("select second number")
             })
+            
             Divider()
-            Text("\(sum)")
+            
+            HStack {
+                Spacer()
+                Text("\(sum)")
+                    .font(Font .system(size: 50))
+                .padding(.trailing)
+            }
         }
         .padding()
     }
