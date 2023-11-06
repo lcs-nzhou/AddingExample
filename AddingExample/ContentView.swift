@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var firstNumber = 2
+    @State var secondNumber = 3
+    
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("2")
+            Text("+")
+            Text("3")
+            Divider()
         }
         .padding()
     }
