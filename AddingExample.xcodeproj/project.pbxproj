@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		74BFFAAE2AF952FE00D99912 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BFFAAD2AF952FE00D99912 /* SwiftUIView.swift */; };
+		74BFFAB02AF9542C00D99912 /* Multiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BFFAAF2AF9542C00D99912 /* Multiplication.swift */; };
 		74C9EFB92AF949C500907F5B /* AddingExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C9EFB82AF949C500907F5B /* AddingExampleApp.swift */; };
 		74C9EFBB2AF949C500907F5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C9EFBA2AF949C500907F5B /* ContentView.swift */; };
 		74C9EFBD2AF949C700907F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C9EFBC2AF949C700907F5B /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		74BFFAAD2AF952FE00D99912 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		74BFFAAF2AF9542C00D99912 /* Multiplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiplication.swift; sourceTree = "<group>"; };
 		74C9EFB52AF949C500907F5B /* AddingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C9EFB82AF949C500907F5B /* AddingExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingExampleApp.swift; sourceTree = "<group>"; };
 		74C9EFBA2AF949C500907F5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				74C9EFBC2AF949C700907F5B /* Assets.xcassets */,
 				74C9EFBE2AF949C700907F5B /* Preview Content */,
 				74BFFAAD2AF952FE00D99912 /* SwiftUIView.swift */,
+				74BFFAAF2AF9542C00D99912 /* Multiplication.swift */,
 			);
 			path = AddingExample;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74C9EFBB2AF949C500907F5B /* ContentView.swift in Sources */,
+				74BFFAB02AF9542C00D99912 /* Multiplication.swift in Sources */,
 				74C9EFB92AF949C500907F5B /* AddingExampleApp.swift in Sources */,
 				74BFFAAE2AF952FE00D99912 /* SwiftUIView.swift in Sources */,
 			);

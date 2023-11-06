@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct Multiplication: View {
+    @State var firstNumber = 0
+    @State var secondNumber = 0
+    
+    var result : Int {
+        return firstNumber * secondNumber
+    }
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("\(firstNumber)")
+        Stepper(value: $firstNumber, label: {
+            Text("select first number")
+        })
+        Text("×")
+        Text("\(secondNumber)")
+        Stepper(value: $secondNumber, label: {
+            Text("select second number")
+        })
+        Divider()
+        Text("\(result)")
     }
 }
 
