@@ -62,31 +62,27 @@ struct ContentView: View {
 }
 
 #Preview {
-    TabView(selection: Binding.constant(1)) {
+    TabView {
         ContentView()
                     .tabItem {
                         Image(systemName: "plus")
                         Text("Plus")
                     }
-                    .tag(1)
         SwiftUIView()
             .tabItem {
                 Image(systemName: "minus")
                 Text("Minus")
             }
-            .tag(2)
-        Text("Alarm")
+        Multiplication()
             .tabItem {
-                Image(systemName: "alarm.fill")
-                Text("Alarm")
+                Image(systemName: "multiply")
+                Text("Multiply")
             }
-            .tag(3)
         Text("Timer")
             .tabItem {
                 Image(systemName: "timer")
                 Text("Timer")
             }
-            .tag(4)
     }
     // Change the accent olor for the currently active tab item
     .accentColor(.purple)
