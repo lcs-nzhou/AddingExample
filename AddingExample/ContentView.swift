@@ -78,7 +78,7 @@ struct ContentView: View {
                 Image(systemName: "multiply")
                 Text("Multiply")
             }
-        Text("Timer")
+        Division()
             .tabItem {
                 Image(systemName: "divide")
                 Text("Divide")

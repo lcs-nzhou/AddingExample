@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Division: View {
     @State var firstNumber = 0
-    @State var secondNumber = 0
+    @State var secondNumber = 1
     
     var result : Int {
         return firstNumber/secondNumber
@@ -35,7 +35,7 @@ struct Division: View {
                     .padding(.trailing)
             }
             .font(Font .system(size: 50))
-            Stepper(value: $secondNumber, label: {
+            Stepper(value: $secondNumber, in: 1...Int.max, label: {
                 Text("select second number")
             })
             .padding()
@@ -44,6 +44,7 @@ struct Division: View {
                 Spacer()
                 Text("\(result)")
                     .padding(.trailing)
+                    .font(Font .system(size: 50))
             }
         }
     }
